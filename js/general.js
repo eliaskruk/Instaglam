@@ -3,7 +3,6 @@ document.addEventListener("deviceready", startup, false);
 function startup() {
     $.mobile.allowCrossDomainPages = true;
     
-    alert('asdasd');
 //    $(window).resize(function() {
 //        $('#foto').height($(window).height() * 0.50);
 //        $('#cuadro-fotos').height($(window).height() * 0.85);
