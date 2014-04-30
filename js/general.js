@@ -3,11 +3,6 @@ document.addEventListener("deviceready", startup, false);
 function startup() {
     $.mobile.allowCrossDomainPages = true;
     
-//    $(window).resize(function() {
-//        $('#foto').height($(window).height() * 0.50);
-//        $('#cuadro-fotos').height($(window).height() * 0.85);
-//    });
-
     var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
 
     $('#cuadro-fotos').height($(window).height() * 0.85);
@@ -48,7 +43,7 @@ function startup() {
             });
         },
         timeout: 40000,
-        error: function(e) {
+        error: function() {
             alert('Error!');
         }
     });
