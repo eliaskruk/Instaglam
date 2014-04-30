@@ -8,7 +8,7 @@ function startup() {
 
     $.mobile.allowCrossDomainPages = true;
 
-    var servidor_url = 'http://localhost/agatha_service/';
+    var servidor_url = 'http://www.thepastoapps.com/instaglam_service/';
 
     $('#cuadro-fotos').height($(window).height() * 0.85);
 
