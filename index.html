@@ -12,6 +12,22 @@
         <script src="plugins/jquery-mobile/jquery.mobile.js" type="text/javascript"></script>
         <script src="js/general.js" type="text/javascript"></script>
         <script src="js/iscroll.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var myScroll;
+            function loaded() {
+                myScroll = new iScroll('cuadro-fotos', {
+                    scrollbarClass: 'myScrollbar',
+                });
+            }
+            document.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+            }
+            , false);
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(loaded, 3000);
+            }
+            , false);
+        </script>
     </head>
     <body>
         <div id="paso1" data-role="page" data-theme="a">

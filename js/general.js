@@ -18,21 +18,6 @@ function startup() {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
-            var myScroll;
-            function loaded() {
-                myScroll = new iScroll('cuadro-fotos', {
-                    scrollbarClass: 'myScrollbar',
-                });
-            }
-            document.addEventListener('touchmove', function(e) {
-                e.preventDefault();
-            }
-            , false);
-            document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(loaded, 1000);
-            }
-            , false);
-
             $('.link-foto').on('tap', function() {
 
                 $('#img-foto, #foto-crop img').attr('src', servidor_url + 'images/fotos/446x560/' + $(this).attr('pre'));
