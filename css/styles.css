@@ -1,0 +1,283 @@
+/* 
+    Created on : 25-abr-2014, 17:50:50
+    Author     : elias
+*/
+
+div.ui-page{
+    background: url('../images/background.jpg') no-repeat center center / 100% 100% transparent;
+}
+div.ui-content {
+    margin: 0 auto;
+    width: 70%;
+}
+#sidebar {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 23%;
+}
+#logo {
+    margin-top: 20%;
+    width: 90%;
+}
+#ayuda {
+    margin-top: 60%;
+    width: 80%;
+}
+#cuadro-fotos {
+    margin-top: 2%;
+    float: left;
+    width: 77%;
+    position: relative; 
+    z-index:1;
+    overflow:auto;
+}
+#cuadro-fotos ul {
+    display: inline-block;
+    list-style: none outside none;
+    padding: 0;
+}
+#cuadro-fotos ul li {
+    border-radius: 5px;
+    box-shadow: 6px 10px 3px #9F7932;
+    float: left;
+    margin: 0 3% 3%;
+    overflow: hidden;
+    width: 17%;
+}
+#cuadro-fotos li a.link-foto img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+#cuadro-filtros {
+    margin-top: 2%;
+    float: left;
+    width: 77%;
+}
+#filtros {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 10px 0 5px;
+    padding: 0;
+}
+#filtros li {
+    display: block;
+    float: left;
+    height: 16%;
+    margin-right: 3%;
+    position: relative;
+    width: 14%;
+}
+#filtros img {
+    border-radius: 10px;
+    box-shadow: 5px 10px 4px #AA843A;
+    width: 100%;
+}
+#filtros li.current img{
+    border: 3px solid #084ED8;
+}
+#filtros li.current label {
+    bottom: 3%;
+    left: 21%;
+}
+#filtros li:hover img{
+    border: 3px solid #084ED8;
+}
+#filtros li:hover label{
+    bottom: 3%;
+    left: 21%
+}
+#filtros label {
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 0.75em;
+    font-weight: bold;
+    left: 20%;
+    position: absolute;
+    text-shadow: 2px 2px 3px #808080;
+}
+#foto {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 7px 13px 5px #9C752F;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#img-foto {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+#filtro-capa-a {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#filtro-capa-b {
+    display: none;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+#content-paso3, #content-paso4 {
+    background-color: #003672;
+    border-radius: 5px;
+    box-shadow: 5px 15px 5px #9B732E;
+    float: left;
+    margin: 11% -2% 0 -3%;
+    position: relative;
+    width: 81%;
+}
+#formulario {
+    float: left;
+    padding: 0 5%;
+    width: 40%;
+}
+#icon-form {
+    bottom: -3%;
+    left: 50%;
+    margin-left: -5%;
+    position: absolute;
+    width: 12%;
+}
+#foto-crop {
+    float: left;
+    width: 50%;
+}
+#foto-crop > img {
+    border-radius: 0 5px 5px 0;
+    display: block;
+    width: 100%;
+}
+h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0.2em 0;
+    text-shadow: 0 0 0;
+}
+label {
+    color: #FFFFFF !important;
+    font-size: 0.7em !important;
+    font-weight: normal !important;
+    text-shadow: 0 0 0;
+}
+p {
+    margin: 0.8em 0;
+}
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    background-color: #405F91;
+    border: medium none;
+}
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset > input {
+    background-color: #405F91;
+    border: medium none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 0.7em;
+    min-height: 0.2em;
+    padding: 2px 0.5em;
+    text-shadow: 0 0 0;
+}
+button.siguiente {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: medium none !important;
+    box-shadow: none !important;
+    width: 15% !important;
+}
+
+div.ui-controlgroup-controls{
+    width: 100% !important; 
+}
+.siguiente {
+    display: block;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+    width: 13%;
+}
+.siguiente > img {
+    margin-top: 2%;
+    width: 100%;
+}
+
+#content-portada {
+    float: left;
+    margin: 6% -2% 0 -3%;
+    position: relative;
+    width: 81%;
+    z-index: 10;
+}
+
+#paso5-back {
+    left: 4%;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    z-index: -1;
+}
+#home {
+    float: left;
+    margin-bottom: 10%;
+    margin-top: 55%;
+    position: relative;
+    width: 12%;
+}
+#home > img {
+    width: 100%;
+}
+#portada {
+    float: left;
+    margin-left: 4%;
+    margin-top: 4%;
+    width: 54%;
+}
+#portada > img {
+    box-shadow: 3px 5px 5px #454545;
+    width: 100%;
+}
+#encontrate {
+    float: left;
+    margin-left: 1%;
+    margin-top: 20%;
+    width: 29%;
+}
+
+#scroller {
+    position:absolute; 
+    z-index:1;
+    /*	-webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    width:100%;
+    padding:0;
+}
+
+.myScrollbarV{
+    background-color: #D5428A;
+    height: 90%;
+    margin-left: 95%;
+    margin-top: 5%;
+    opacity: 1;
+    width: 1px;
+    z-index: 100;
+}
+
+.myScrollbarV > div{   
+    background-color: #D5428A;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #494949;
+    margin-left: -9px;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0px, 53.2405px) translateZ(0px);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);
+    width: 20px;
+    z-index: 100;
+}
