@@ -1,9 +1,12 @@
 document.addEventListener("deviceready", startup, false);
 
 function startup() {
+//$(document).ready(function(){
     $.mobile.allowCrossDomainPages = true;
 
     var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
+
+//    var servidor_url = 'http://localhost/agatha_service/'
 
     $('#cuadro-fotos').height($(window).height() * 0.85);
 
@@ -136,6 +139,6 @@ function startup() {
         }, 5000);
 
     });
-
+//});
 }
 
