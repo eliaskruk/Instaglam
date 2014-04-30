@@ -1,14 +1,12 @@
 document.addEventListener("deviceready", startup, false);
 
 function startup() {
-
-//$(document).ready(function() {
-    $(window).resize(function() {
-        $('#foto').height($(window).height() * 0.50);
-        $('#cuadro-fotos').height($(window).height() * 0.85);
-    });
-
     $.mobile.allowCrossDomainPages = true;
+    
+//    $(window).resize(function() {
+//        $('#foto').height($(window).height() * 0.50);
+//        $('#cuadro-fotos').height($(window).height() * 0.85);
+//    });
 
     var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
 
@@ -143,7 +141,6 @@ function startup() {
         }, 5000);
 
     });
-//});
 
 }
 
