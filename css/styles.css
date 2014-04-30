@@ -7,6 +7,10 @@ div.ui-page{
     background: url('../images/background.jpg') no-repeat center center transparent;
     background-size: 100% 100%;
 }
+div#paso6{
+    background: url('../images/background.jpg') no-repeat center center transparent;
+    background-size: 100% 100%;
+}
 div.ui-content {
     margin: 0 auto;
     width: 70%;
