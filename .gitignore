@@ -213,3 +213,9 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+nbproject/project.xml
+nbproject/project.properties
+nbproject/private/retriever/www.w3.org/ns/widgets/index.xml
+nbproject/private/retriever/catalog.xml
+nbproject/private/private.xml
+nbproject/private/private.properties

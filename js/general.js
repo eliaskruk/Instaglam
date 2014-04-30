@@ -1,6 +1,8 @@
 document.addEventListener("deviceready", startup, false);
 
 function startup() {
+
+//$(document).ready(function() {
     $(window).resize(function() {
         $('#foto').height($(window).height() * 0.50);
         $('#cuadro-fotos').height($(window).height() * 0.85);
@@ -8,18 +10,32 @@ function startup() {
 
     $.mobile.allowCrossDomainPages = true;
 
-    var servidor_url = 'http://www.thepastoapps.com/proyectos/instaglam_service/';
+    var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
 
     $('#cuadro-fotos').height($(window).height() * 0.85);
 
     $.ajax({
-        type: "POST",
         url: servidor_url + 'lista_fotos.php',
         dataType: 'json',
         success: function(datos) {
             for (i = 0; i < datos.length; ++i) {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
+
+            var myScroll;
+            function loaded() {
+                myScroll = new iScroll('cuadro-fotos', {
+                    scrollbarClass: 'myScrollbar',
+                });
+            }
+            document.addEventListener('touchmove', function(e) {
+                e.preventDefault();
+            }
+            , false);
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(loaded, 200);
+            }
+            , false);
 
             $('.link-foto').on('tap', function() {
 
@@ -34,8 +50,8 @@ function startup() {
             });
         },
         timeout: 40000,
-        error: function() {
-            alert('Error de conexion con el servidor!!');
+        error: function(e) {
+            alert('Error!');
         }
     });
 
@@ -98,7 +114,7 @@ function startup() {
             },
             timeout: 10000,
             error: function() {
-                alert('asdasdasd');
+                alert('Error!');
             }
         });
 
@@ -127,5 +143,7 @@ function startup() {
         }, 5000);
 
     });
+//});
+
 }
 
