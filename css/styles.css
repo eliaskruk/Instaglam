@@ -104,30 +104,32 @@ div.ui-content {
     text-shadow: 2px 2px 3px #808080;
 }
 #foto {
-    background-color: #FFFFFF;
-    border-radius: 10px;
     box-shadow: 7px 13px 5px #9C752F;
+    left: 50%;
+    margin-left: -26%;
     overflow: hidden;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 51.5%;
 }
 #img-foto {
     display: block;
-    height: 100%;
     margin: 0 auto;
+    width: 100%;
 }
 #filtro-capa-a {
     display: none;
     left: 0;
     position: absolute;
     top: 0;
+    width: 72%;
 }
 #filtro-capa-b {
     display: none;
     bottom: 0;
     position: absolute;
     right: 0;
+    width: 72%;
 }
 #content-paso3, #content-paso4 {
     background-color: #003672;
@@ -209,7 +211,7 @@ div.ui-controlgroup-controls{
 }
 .siguiente > img {
     margin-top: 2%;
-    width: 100%;
+    width: 98%;
 }
 
 #content-portada {
