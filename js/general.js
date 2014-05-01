@@ -101,13 +101,6 @@ function startup() {
 //});
 }
 
-//reload photos
-$('#reloadhome').on('tap', function() {
-    //setTimeout(function() {
-        cargar_fotos();
-        //$.mobile.changePage("#paso1", {transition: "none"});
-      //  }, 5000);
-      });
 
 function cargar_fotos() {
     $.ajax({
