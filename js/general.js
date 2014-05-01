@@ -1,8 +1,8 @@
 document.addEventListener("deviceready", startup, false);
 
-var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
+//var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
 
-//var servidor_url = 'http://localhost/instaglam_service/';
+var servidor_url = 'http://192.168.1.10/instaglam_service/';
 
 function startup() {
 //$(document).ready(function() {
