@@ -105,11 +105,13 @@ function cargar_fotos() {
         type: "POST",
         dataType: 'json',
         success: function(datos) {
+            $('#cuadro-fotos ul').html('');
             for (i = 0; i < datos.length; ++i) {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
-            loaded();
+            setTimeout(loaded(), 1000);
+            
             
             $('.link-foto').on('tap', function() {
 
