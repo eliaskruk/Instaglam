@@ -1,6 +1,6 @@
 document.addEventListener("deviceready", startup, false);
 
-    var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
+var servidor_url = 'https://www.thepastoapps.com/proyectos/instaglam_service/';
 
 //var servidor_url = 'http://localhost/instaglam_service/';
 
@@ -75,7 +75,7 @@ function startup() {
         $.mobile.changePage('#paso6', {transition: "none"});
 
         cargar_fotos();
-  
+
         myScroll.scrollTo(0, 0, 0, 0);
 
         setTimeout(function() {
@@ -110,8 +110,9 @@ function cargar_fotos() {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
-            setTimeout(loaded(), 3000);
-            
+            setTimeout(function(){
+                myScroll.refresh();
+            }, 1000);
             
             $('.link-foto').on('tap', function() {
 
