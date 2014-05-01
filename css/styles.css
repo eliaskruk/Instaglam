@@ -157,7 +157,6 @@ div.ui-content {
 }
 h3 {
     color: #FFFFFF;
-    font-size: 100%;
     font-weight: normal;
     letter-spacing: 1px;
     margin: 5% 0;
@@ -165,7 +164,6 @@ h3 {
 }
 label {
     color: #FFFFFF !important;
-    font-size: 70% !important;
     font-weight: normal !important;
     text-shadow: 0 0 0;
 }
@@ -181,9 +179,8 @@ p {
     border: medium none;
     border-radius: 3px;
     color: #FFFFFF;
-    font-size: 70%;
-    min-height: 20%;
-    padding: 2px 50%;
+    min-height: 1%;
+    padding: 2px;
     text-shadow: 0 0 0;
 }
 button.siguiente {

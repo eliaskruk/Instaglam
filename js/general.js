@@ -10,6 +10,10 @@ function startup() {
 
     $('#cuadro-fotos').height($(window).height() * 0.85);
 
+    $('h3').css('font-size', ($(window).height() / 40.5) + 'px');
+    $('label, input[type="text"]').css('font-size', ($(window).height() / 58) + 'px');
+
+
     cargar_fotos();
 
     $('#filtros li a').on('tap', function() {
@@ -74,9 +78,9 @@ function startup() {
     $('#home').on('tap', function() {
         $.mobile.changePage('#paso6', {transition: "none"});
 
-        cargar_fotos();
-
         setTimeout(function() {
+            cargar_fotos();
+            
             $("#form-datos-1")[0].reset();
             $("#form-datos-2")[0].reset();
 
@@ -108,8 +112,6 @@ function cargar_fotos() {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
-            myScroll.refresh();
-
             $('.link-foto').on('tap', function() {
 
                 $('#foto').css({visibility: 'hidden'});
@@ -124,6 +126,10 @@ function cargar_fotos() {
                 $.mobile.changePage('#paso2', {transition: "none"});
 
             });
+
+            setTimeout(function() {
+                myScroll.refresh();
+            }, 0);
         },
         timeout: 40000,
         error: function() {
