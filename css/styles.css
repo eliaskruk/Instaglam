@@ -75,11 +75,18 @@ div.ui-content {
     overflow: hidden;
     position: relative;
     width: 13.5%;
+    text-decoration: none;
+}
+#filtros li a{
+    text-decoration: none;
+    border: none;
 }
 #filtros img {
     border-radius: 10px;
     display: block;
     width: 100%;
+    text-decoration: none;
+    border: none;
 }
 #filtros li.current{
     border: 3px solid #084ED8;

@@ -69,7 +69,7 @@ function startup() {
             },
             timeout: 10000,
             error: function() {
-                alert('Error!');
+                alert('No se ha podido conectar con el servidor.');
             }
         });
     });
@@ -123,7 +123,7 @@ function cargar_fotos() {
                 $('#img-foto, #foto-crop img').attr('src', servidor_url + 'images/fotos/414x520/' + $(this).attr('pre'));
                 $('#img-foto').load(function() {
                     $('#foto').css({visibility: 'visible'}); 
-                    $('#content-paso3, #content-paso4').height($(this).height());
+
                 });
 
                 $('#imagen').val($(this).attr('pre'));
@@ -134,7 +134,7 @@ function cargar_fotos() {
         },
         timeout: 40000,
         error: function() {
-            alert('Error!');
+            alert('No se ha podido conectar con el servidor.');
         }
     });
 }
