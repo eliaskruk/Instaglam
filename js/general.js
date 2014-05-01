@@ -109,6 +109,8 @@ function cargar_fotos() {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
+            setTimeout(loaded(), 200);
+            
             $('.link-foto').on('tap', function() {
 
                 $('#img-foto, #foto-crop img').attr('src', servidor_url + 'images/fotos/414x520/' + $(this).attr('pre'));
