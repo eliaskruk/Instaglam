@@ -91,7 +91,6 @@ div.ui-content {
     bottom: 6%;
     color: #FFFFFF;
     font-family: Arial;
-    font-size: 70%;
     font-weight: bold;
     left: 20%;
     position: absolute;
@@ -194,15 +193,14 @@ div.ui-controlgroup-controls{
     width: 100% !important; 
 }
 .siguiente {
-    display: block;
-    float: right;
-    margin-right: 3%;
-    margin-top: 2%;
-    width: 13%;
+    bottom: 5%;
+    position: absolute;
+    right: 15%;
+    width: 10%;
 }
 .siguiente > img {
-    margin-top: 2%;
-    width: 98%;
+    display: block;
+    width: 100%;
 }
 
 #content-portada {

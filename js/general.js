@@ -11,7 +11,7 @@ function startup() {
     $('#cuadro-fotos').height($(window).height() * 0.85);
 
     $('h3').css('font-size', ($(window).height() / 40.5) + 'px');
-    $('label, input[type="text"]').css('font-size', ($(window).height() / 58) + 'px');
+    $('label, input[type="text"], #filtros span').css('font-size', ($(window).height() / 58) + 'px');
 
 
     cargar_fotos();
@@ -111,6 +111,11 @@ function cargar_fotos() {
             for (i = 0; i < datos.length; ++i) {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
+            
+            $('#cuadro-fotos ul li a img').load(function(){
+                myScroll.refresh();
+                myScroll.scrollTo(0, 0, 0);
+            });
 
             $('.link-foto').on('tap', function() {
 
@@ -126,10 +131,6 @@ function cargar_fotos() {
                 $.mobile.changePage('#paso2', {transition: "none"});
 
             });
-
-            setTimeout(function() {
-                myScroll.refresh();
-            }, 0);
         },
         timeout: 40000,
         error: function() {
