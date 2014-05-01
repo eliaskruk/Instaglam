@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
         <link href="css/styles.css" rel="stylesheet">
         <link href="plugins/jquery-mobile/jquery.mobile.css" rel="stylesheet">
@@ -16,16 +16,20 @@
             var myScroll;
             function loaded() {
                 myScroll = new iScroll('cuadro-fotos', {
-                    scrollbarClass: 'myScrollbar'
+                    scrollbarClass: 'myScrollbar',
                 });
             }
 
             document.addEventListener('touchmove', function(e) {
                 e.preventDefault();
-            }, false);
-
-            document.addEventListener('DOMContentLoaded', loaded, false);
+            }
+            , false);
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(loaded, 200);
+            }
+            , false);
         </script>
+
     </head>
     <body>
         <div id="paso1" data-role="page" data-theme="a">
@@ -56,37 +60,37 @@
                         <li class="current none">
                             <a pre="none" href="javascript:;">
                                 <img src="images/filtros-normal.jpg"/>
-                                <label>NORMAL</label>
+                                <span>NORMAL</span>
                             </a>
                         </li>
                         <li>
                             <a pre="1" href="javascript:;">
                                 <img src="images/filtros1.jpg"/>
-                                <label>FILTRO 1</label>
+                                <span>FILTRO 1</span>
                             </a>
                         </li>
                         <li>
                             <a pre="2" href="javascript:;">
                                 <img src="images/filtros2.jpg"/>
-                                <label>FILTRO 2</label>
+                                <span>FILTRO 2</span>
                             </a>
                         </li>
                         <li>
                             <a pre="3" href="javascript:;">
                                 <img src="images/filtros3.jpg"/>
-                                <label>FILTRO 3</label>
+                                <span>FILTRO 3</span>
                             </a>
                         </li>
                         <li>
                             <a pre="4" href="javascript:;">
                                 <img src="images/filtros4.jpg"/>
-                                <label>FILTRO 4</label>
+                                <span>FILTRO 4</span>
                             </a>
                         </li>
                         <li style="margin-right: 0;">
                             <a pre="5" href="javascript:;">
                                 <img src="images/filtros5.jpg"/>
-                                <label>FILTRO 5</label>
+                                <span>FILTRO 5</span>
                             </a>
                         </li>
                     </ul>
@@ -217,5 +221,6 @@
             <div data-role="content">
             </div>
         </div>
+
     </body>
 </html>

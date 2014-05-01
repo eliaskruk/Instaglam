@@ -284,7 +284,7 @@
             } else {
                 that.vScrollbarSize = that.vScrollbarWrapper.clientHeight;
 //			that.vScrollbarIndicatorSize = m.max(m.round(that.vScrollbarSize * that.vScrollbarSize / that.scrollerH), 8);
-                that.vScrollbarIndicatorSize = m.max(m.round(that.vScrollbarSize * that.vScrollbarSize / 8000), 8);
+                that.vScrollbarIndicatorSize = m.max(m.round(that.vScrollbarSize * that.vScrollbarSize / 3000), 8);
                 that.vScrollbarIndicator.style.height = that.vScrollbarIndicatorSize + 'px';
                 that.vScrollbarMaxScroll = that.vScrollbarSize - that.vScrollbarIndicatorSize;
                 that.vScrollbarProp = that.vScrollbarMaxScroll / that.maxScrollY;

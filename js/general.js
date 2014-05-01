@@ -76,8 +76,6 @@ function startup() {
 
         cargar_fotos();
 
-        myScroll.scrollTo(0, 0, 0, 0);
-
         setTimeout(function() {
             $("#form-datos-1")[0].reset();
             $("#form-datos-2")[0].reset();
@@ -110,17 +108,21 @@ function cargar_fotos() {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
-            setTimeout(function(){
-                myScroll.refresh();
-            }, 1000);
-            
+            myScroll.refresh();
+
             $('.link-foto').on('tap', function() {
 
+                $('#foto').css({visibility: 'hidden'});
                 $('#img-foto, #foto-crop img').attr('src', servidor_url + 'images/fotos/414x520/' + $(this).attr('pre'));
+                $('#img-foto').load(function() {
+                    $('#foto').css({visibility: 'visible'});
+                });
+
 
                 $('#imagen').val($(this).attr('pre'));
 
                 $.mobile.changePage('#paso2', {transition: "none"});
+
             });
         },
         timeout: 40000,
