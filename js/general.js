@@ -110,7 +110,7 @@ function cargar_fotos() {
                 $('#cuadro-fotos ul').append('<li><a class="link-foto" href="javascript:;" pre="' + datos[i] + '"><img src="' + servidor_url + 'images/fotos/120x120/' + datos[i] + '"></a></li>');
             }
 
-            setTimeout(loaded(), 2000);
+            setTimeout(loaded(), 3000);
             
             
             $('.link-foto').on('tap', function() {
