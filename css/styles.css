@@ -41,6 +41,7 @@ div.ui-content {
     display: inline-block;
     list-style: none outside none;
     padding: 0;
+    width: 100%;
 }
 #cuadro-fotos ul li {
     border-radius: 5px;
@@ -168,11 +169,13 @@ h3 {
     letter-spacing: 1px;
     margin: 5% 0;
     text-shadow: 0 0 0;
+    font-size: 18px !important;
 }
 label {
     color: #FFFFFF !important;
     font-weight: normal !important;
     text-shadow: 0 0 0;
+    font-size: 18px !important;
 }
 p {
     margin: 4% 0;
