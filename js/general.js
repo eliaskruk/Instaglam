@@ -38,13 +38,7 @@ function startup() {
     });
 
 
-    $('#form-datos-1').submit(function() {
-        $.mobile.changePage('#paso4', {transition: "none"});
-
-        return false;
-    });
-
-    $('#form-datos-2').submit(function() {
+    $('#generar_portada').on('tap', function() {
         var data = {
             nombre: $('#nombre').val(),
             apellido: $('#apellido').val(),
@@ -74,8 +68,6 @@ function startup() {
                 alert('Error!');
             }
         });
-
-        return false;
     });
 
     //IR A LA HOME
