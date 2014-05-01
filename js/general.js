@@ -122,9 +122,9 @@ function cargar_fotos() {
                 $('#foto').css({visibility: 'hidden'});
                 $('#img-foto, #foto-crop img').attr('src', servidor_url + 'images/fotos/414x520/' + $(this).attr('pre'));
                 $('#img-foto').load(function() {
-                    $('#foto').css({visibility: 'visible'});
+                    $('#foto').css({visibility: 'visible'}); 
+                    $('#content-paso3, #content-paso4').height($(this).height());
                 });
-
 
                 $('#imagen').val($(this).attr('pre'));
 

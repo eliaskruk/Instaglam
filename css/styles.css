@@ -95,6 +95,7 @@ div.ui-content {
     left: 20%;
     position: absolute;
     text-shadow: 2px 2px 3px #808080;
+    text-decoration: none;
 }
 #foto {
     box-shadow: 7px 13px 5px #9C752F;
